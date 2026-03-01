@@ -1,0 +1,94 @@
+TITLE:GIT & GITHUB
+
+Git:
+
+1)Git Bash:
+Version Control System: track changes in code
+Git Bash is a terminal where you type Git commands manually.
+
+1.)Track the history
+2.)collaborate
+
+Folders = repositories
+README File = Overview of our project(can write by using html)
+add->commit = taking screenshot
+git--version = check is git installed or not
+clear = clear screen
+pwd = working directory
+git config --global user. name "My Name
+git config --global user. email "Email
+git config --list = give all info we stored
+git clone<-some link-> = clone GitHub repos on pc
+cd Name = change directory(to go into the folder)
+cd.. = to come out of the folder
+ls = give of files in a folder which we can see
+ls -a = give all file along with hidden (like .git)
+git status = compare status of GitHub and git files(show state as modified until add or commit)
+files:
+ 	1.Untracked file :new files that git cant track
+ 	2.modified :changed
+ 	3.staged :file is ready to committed
+ 	4.Unmodified :unchanged
+git init = make current repo a git repo(add .git hidden file)
+git add <-file name-> = add new and changed files
+git commit -m "some message" = record changes(states show nothing to commit)
+git push origin main = upload local repo to GitHub
+ 	origin is name of the copy of code (repo on GitHub)(can be change)
+ 	main is branch(can be change)
+mkdir Name = make folder
+git remote add origin<-link-> =
+git remote -v = check remote
+git branch = check branch(different copies)
+git branch -M main = to rename branch
+git push -u origin main(no need to mention origin main next time)
+git checkout <-branch name-> = to go into another branch
+git checkout -b <-new branch name-> = to create new branch
+git branch -d <-branch name-> = to delete branch other than present
+
+merging Code
+git diff main =n compare to branches
+git merge <-branch name->
+create pull request on GitHub(if it is able automatically merge)
+git pull origin main = upload GitHub repo on local
+
+Merge conflicts(error->can not automatically merge)
+1.)go with first
+2.)go with 2nd
+3.)go with both
+
+Undoing changes(from GitHub)
+1)add but not commit		git reset<-file name-> OR git reset
+2)committed			git reset HEAD~1(undo last change by one)
+3)for many commits		git reset<-commit hash->
+
+git log = to check all last commit
+q = to go out of log
+
+Undoing changes(from vs code)
+git reset --hard <-(commit hash)->
+
+Fork
+to make copy of others code(repo)
+
+
+
+2)GitHub Desktop:
+is a GUI (Graphical Interface) app to use Git without typing commands.
+
+1] Branch-->A branch is like making a copy of your notebook to try new ideas without disturbing the main notebook.
+2] Push-->Uploading your local computer changes to GitHub.
+3] Pull-->Download latest changes from GitHub to your computer. Your teammate updated repository. You must sync before working.
+4] Merge-->Combining work from one branch into another. You merge the branch into main branch.Now main branch contains new feature.
+
+3)Using VS Code Integration
+Microsoft built Git integration inside Visual Studio Code.
+VS Code allows Git operations directly inside the code editor.
+
+
+4)Uploading Files Directly on GitHub Website
+You upload files manually through browser.
+
+
+1️⃣ Start with GitHub Desktop (confidence build)
+2️⃣ Use VS Code Git integration (daily workflow)
+3️⃣ Learn Git Bash slowly (industry skill)
